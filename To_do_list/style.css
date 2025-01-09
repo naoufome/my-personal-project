@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui;
+    background: linear-gradient(to top ,rgb(0, 21, 49),rgb(100, 0, 0));
+    height: 100vh;
+}
+header{
+    color: white;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(black,rgb(27, 0, 0));
+    margin: auto;
+    padding: 2% 0 2% 0;
+}
+.container{
+    border: 1px solid white;
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+}
+
+.newTask{
+    position: relative;
+    background-color: white;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px black;
+}
+.newTask input {
+    width: 65%;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 15px;
+}
+.newTask button{
+    width: 20%;
+    padding: 5px 5px;
+    margin-left: 5px;
+    background: linear-gradient(rgb(137, 151, 151),rgb(178, 200, 197));
+    border: none;
+    border-radius: 15px;
+}
+.newTask button:hover{
+    transform: scale(1.1);
+}
+#tasks{
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px black;
+}
+.icon{
+    width: 20px;
+
+}
+.task{
+    background-color: white;
+    height: 50px;
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task span{
+    font-size: 20px;
+}
+.task button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.task button:hover{
+    transform: scale(1.1);
+}
+.completed{
+    text-decoration: line-through;
+}

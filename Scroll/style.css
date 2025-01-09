@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(rgb(186, 85, 236),rgb(13, 11, 11));
+    height: 100vh;
+    font-weight: system-ui;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    position: fixed;/*this to make the pics and everything abouve the header */
+    width: 95%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a{
+    font-size: 20px;
+    padding:6px 15px ;/*in hover it gives more spice and good style*/
+    border-radius: 15px;
+}
+header ul li a:hover, .active{
+    background-color: white;
+    color: rgb(186, 85, 236);
+}
+.main{
+    position: relative;/*Parent do this*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main::after{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    content: '';
+    background: linear-gradient(to top ,rgb(186, 85, 236),transparent);
+}
+.main img{
+    position:absolute;/*childs do this*/
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;/* this to make the pics look better*/
+}
+#moon{
+    mix-blend-mode: screen;/*it takes the background*/
+    transform: translateY(80px);
+}
+.nike{
+    color: white;
+    font-size: 25px;
+    transform: translateY(-140px);
+}
+.content{
+    color: white;
+    padding: 30px;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.content p{
+    margin: 20px;
+}
