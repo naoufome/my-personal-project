@@ -28,4 +28,4 @@ The website serves as a presentational platform for the school, featuring:
 You can:
 1. Clone this repo:
    ```bash
-   git clone https://github.com/your-username/my-personal-project.git
+   git clone https://github.com/naoufome/my-personal-project.git
