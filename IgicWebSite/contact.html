@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - École IGIC</title> <!-- Consistent Title -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body> <!-- Removed inline padding, handled by CSS -->
+
+    <!-- Header: Logo et Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/igicLogo.png" alt="Logo École IGIC" width="120">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Basculer la navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">À Propos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pôle Formations
+                             </a>
+                             <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#initialesModal">
+                                        Formations Initiales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#executivesModal">
+                                        Formations Executives
+                                    </a>
+                                </li>
+                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Actualités IGIC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contactez-nous</a> <!-- Active class correct -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header Section -->
+        <section class="page-header-custom text-white text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Contactez-nous</h1>
+                <p class="lead mb-0">Nous sommes là pour répondre à toutes vos questions.</p>
+                 <!-- Optional Breadcrumb -->
+                 <nav aria-label="breadcrumb" class="d-flex justify-content-center mt-3">
+                  <ol class="breadcrumb breadcrumb-light">
+                    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                  </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Contact Details Section -->
+        <section class="contact-details py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Nos Coordonnées</h2>
+                <div class="row text-center g-4"> <!-- Added g-4 for spacing -->
+                    <!-- Address -->
+                    <div class="col-lg-4"> <!-- Changed to lg for wider cards -->
+                         <div class="contact-item-card card h-100 border-0 shadow-sm p-4">
+                            <i class="bi bi-geo-alt-fill display-4 text-primary mb-3"></i>
+                            <h4 class="mb-3">Adresse</h4>
+                            <p class="text-muted">
+                                <!-- !!! REPLACE WITH ACTUAL ADDRESS !!! -->
+                                123 Rue de l'École<br>Casablanca, Maroc
+                            </p>
+                         </div>
+                    </div>
+                     <!-- Phone -->
+                    <div class="col-lg-4">
+                         <div class="contact-item-card card h-100 border-0 shadow-sm p-4">
+                            <i class="bi bi-telephone-fill display-4 text-primary mb-3"></i>
+                            <h4 class="mb-3">Téléphone</h4>
+                             <!-- !!! REPLACE WITH ACTUAL PHONE NUMBER !!! -->
+                            <p><a href="tel:+212XXXXXXXXX" class="text-decoration-none link-secondary">+212 X XX XX XX XX</a></p>
+                            <!-- Optional: Add hours <p class="small text-muted mt-2">Lun - Ven : 9h - 17h</p> -->
+                        </div>
+                    </div>
+                     <!-- Email -->
+                    <div class="col-lg-4">
+                        <div class="contact-item-card card h-100 border-0 shadow-sm p-4">
+                            <i class="bi bi-envelope-fill display-4 text-primary mb-3"></i>
+                            <h4 class="mb-3">Email</h4>
+                             <!-- !!! REPLACE WITH ACTUAL EMAIL !!! -->
+                            <p><a href="mailto:contact@igic-ecole.ma" class="text-decoration-none link-secondary">contact@igic-ecole.ma</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map & Form Section Combined -->
+        <section class="contact-map-form-section py-5 bg-light">
+            <div class="container">
+                 <h2 class="text-center mb-5 section-title">Envoyez-nous un Message & Localisation</h2>
+                <div class="row g-5">
+                    <!-- Column 1: Form -->
+                    <div class="col-lg-7">
+                         <h3 class="mb-4 h4">Formulaire de contact</h3>
+                        <!-- Form Action needs update -->
+                        <form id="contactForm" action="#" method="POST" class="needs-validation" novalidate>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-4">
+                                    <label for="contactCivilite" class="form-label">Civilité</label>
+                                    <select class="form-select" id="contactCivilite" name="civilite">
+                                        <option selected disabled value="">Choisir...</option>
+                                        <option value="Mlle">Mlle</option>
+                                        <option value="Mme">Mme</option>
+                                        <option value="Mr">Mr</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="contactPrenom" class="form-label">Prénom</label>
+                                    <input type="text" class="form-control" id="contactPrenom" name="prenom" required>
+                                     <div class="invalid-feedback">Prénom requis.</div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="contactNom" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="contactNom" name="nom" required>
+                                     <div class="invalid-feedback">Nom requis.</div>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label">Adresse Email</label>
+                                    <input type="email" class="form-control" id="contactEmail" name="email" required>
+                                     <div class="invalid-feedback">Adresse email valide requise.</div>
+                                </div>
+                                <div class="col-md-6">
+                                     <label for="contactTelephone" class="form-label">Téléphone</label>
+                                     <input type="tel" class="form-control" id="contactTelephone" name="telephone" required>
+                                     <div class="invalid-feedback">Numéro de téléphone requis.</div>
+                                </div>
+                            </div>
+
+                             <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="contactPays" class="form-label">Pays</label>
+                                    <input type="text" class="form-control" id="contactPays" name="pays" required>
+                                    <div class="invalid-feedback">Pays requis.</div>
+                                </div>
+                                <div class="col-md-6">
+                                     <label for="contactVille" class="form-label">Ville</label>
+                                     <input type="text" class="form-control" id="contactVille" name="ville" required>
+                                     <div class="invalid-feedback">Ville requise.</div>
+                                </div>
+                            </div>
+
+                             <div class="mb-3">
+                                <label for="contactFormation" class="form-label">Formation souhaitée</label>
+                                <select class="form-select" id="contactFormation" name="formation_demandee" required>
+                                    <option selected disabled value="">Sélectionnez une formation...</option>
+                                    <optgroup label="DT - BAC +2">
+                                        <option value="DT - Marketing & Action Commerciale">Marketing & Action Commerciale</option>
+                                        <option value="DT - Gestion Informatisée">Gestion Informatisée</option>
+                                        <option value="DT - Maintenance & Support Technique">Maintenance & Support Technique</option>
+                                    </optgroup>
+                                    <optgroup label="DTS - BAC +2">
+                                        <option value="DTS - Analyste Marketing">Analyste Marketing</option>
+                                        <option value="DTS - Commerce International">Commerce International</option>
+                                        <option value="DTS - Finance & Comptabilité">Finance & Comptabilité</option>
+                                        <option value="DTS - Systèmes et Réseaux informatique">Systèmes et Réseaux informatique</option>
+                                        <option value="DTS - Marketing Digital">Marketing Digital</option>
+                                        <option value="DTS - Développeur Full Stack">Développeur Full Stack</option>
+                                     </optgroup>
+                                     <optgroup label="Bachelor">
+                                         <option value="Bachelor - Informatique et Réseaux">Informatique et Réseaux</option>
+                                         <option value="Bachelor - Marketing International">Marketing International</option>
+                                         <option value="Bachelor - Transport Logistique">Transport Logistique</option>
+                                         <option value="Bachelor - Finance et Contrôle de Gestion">Finance et Contrôle de Gestion</option>
+                                     </optgroup>
+                                     <optgroup label="Mastères">
+                                         <option value="Mastère - Informatique">Informatique</option>
+                                         <option value="Mastère - Management et Stratégie d’entreprise">Management et Stratégie d’entreprise</option>
+                                         <option value="Mastère - E-communication">E-communication</option>
+                                         <option value="Mastère - Logistique">Logistique</option>
+                                         <option value="Mastère - Finance Internationale">Finance Internationale</option>
+                                     </optgroup>
+                                      <optgroup label="Autres Formations Executives">
+                                         <option value="Formations Certifiantes">Formations Certifiantes</option>
+                                         <option value="MBA Européen">MBA Européen</option>
+                                     </optgroup>
+                                     <option value="Autre / Question Générale">Autre / Question Générale</option>
+                                </select>
+                                <div class="invalid-feedback">Veuillez sélectionner une formation.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactSubject" class="form-label">Sujet</label>
+                                <input type="text" class="form-control" id="contactSubject" name="subject">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Votre Message</label>
+                                <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Votre message ne peut pas être vide.</div>
+                            </div>
+
+                            <!-- Optional: Add Honeypot for spam prevention -->
+                            <!-- <input type="text" name="_gotcha" style="display:none !important"> -->
+
+                            <!-- Submission Feedback -->
+                            <div id="formSubmissionFeedback" class="mt-3"></div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">Envoyer le Message <i class="bi bi-send-fill ms-2"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Column 2: Map -->
+                    <div class="col-lg-5">
+                        <h3 class="mb-4 h4">Notre localisation</h3>
+                         <!-- Replace with your Google Maps Embed code -->
+                        <div class="ratio ratio-4x3 shadow rounded overflow-hidden"> <!-- Adjusted ratio, added rounded -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.600490578011!2d-7.61924688479698!3d33.59011298073377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2ed5d4c7a1b%3A0x5b6f7b1f8d7c4a2a!2sCasablanca!5e0!3m2!1sen!2sma!4v1678886000000!5m2!1sen!2sma"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Carte de localisation IGIC">
+                            </iframe>
+                        </div>
+                        <p class="mt-3 text-muted small">N'hésitez pas à nous rendre visite pendant nos heures d'ouverture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Combined Section -->
+
+    </main>
+
+    <!-- Pied de page (Using consistent 4-column footer) -->
+    <footer class="footer-section bg-dark text-white py-5 mt-auto">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Colonne 1: Logo & About -->
+                 <div class="col-lg-4 col-md-6">
+                    <img src="img/igicLogo_white.png" alt="Logo IGIC Blanc" width="150" class="mb-3">
+                    <p class="small text-muted">Formant les leaders de demain depuis 1986. Excellence, innovation et réussite professionnelle.</p>
+                     <p class="small text-muted mb-0">© 2024 École IGIC. Tous droits réservés.</p>
+                </div>
+                <!-- Colonne 2: Liens Utiles -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading mb-3">Navigation</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="#">Pôle Formations</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                 <!-- Colonne 3: Pôles -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading mb-3">Nos Pôles</h5>
+                    <ul class="list-unstyled footer-links">
+                       <li><a href="#" data-bs-toggle="modal" data-bs-target="#initialesModal">Formations Initiales</a></li>
+                       <li><a href="#" data-bs-toggle="modal" data-bs-target="#executivesModal">Formations Executives</a></li>
+                       <li><a href="dt-bac2.html">DT-BAC +2</a></li>
+                       <li><a href="dts-bac2.html">DTS-BAC +2</a></li>
+                       <li><a href="bachelor.html">Bachelor</a></li>
+                       <li><a href="masteres.html">Mastères</a></li>
+                    </ul>
+                </div>
+                <!-- Colonne 4: Contact & Social -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading mb-3">Contactez-nous</h5>
+                     <!-- !!! REPLACE WITH ACTUAL INFO !!! -->
+                     <p class="small mb-1"><i class="bi bi-geo-alt-fill me-2"></i>123 Rue de l'École, Casablanca, Maroc</p>
+                    <p class="small mb-1"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+212XXXXXXXXX" class="text-white text-decoration-none">+212 X XX XX XX XX</a></p>
+                    <p class="small mb-3"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:contact@igic-ecole.ma" class="text-white text-decoration-none">contact@igic-ecole.ma</a></p>
+                    <h5 class="footer-heading mb-2">Suivez-nous</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2 fs-4"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white me-2 fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Pied de page -->
+
+    <!-- Modals (Should inherit styles) -->
+    <!-- MODAL FOR Formations Initiales -->
+    <div class="modal fade" id="initialesModal" tabindex="-1" aria-labelledby="initialesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="initialesModalLabel">Options - Formations Initiales</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Veuillez choisir une formation :</p>
+                    <div class="list-group">
+                        <a href="dt-bac2.html" class="list-group-item list-group-item-action"><i class="bi bi-mortarboard-fill me-2"></i> DT-BAC +2</a>
+                        <a href="dts-bac2.html" class="list-group-item list-group-item-action"><i class="bi bi-mortarboard-fill me-2"></i> DTS-BAC +2</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL Formations Initiales -->
+
+    <!-- MODAL FOR Formations Executives -->
+    <div class="modal fade" id="executivesModal" tabindex="-1" aria-labelledby="executivesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="executivesModalLabel">Options - Formations Executives</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                     <p>Veuillez choisir une formation :</p>
+                     <div class="list-group">
+                        <a href="bachelor.html" class="list-group-item list-group-item-action"><i class="bi bi-briefcase-fill me-2"></i> Bachelor</a>
+                        <a href="masteres.html" class="list-group-item list-group-item-action"><i class="bi bi-briefcase-fill me-2"></i> Mastères</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-patch-check-fill me-2"></i> Formations certifiantes</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-gem me-2"></i> MBA Européen</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL Formations Executives -->
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Simple Form Validation Script (Optional) -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+          'use strict'
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation')
+
+          // Loop over them and prevent submission
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+
+        // Basic Formspree feedback (replace with your logic if using a different backend)
+        const form = document.getElementById('contactForm');
+        const feedbackDiv = document.getElementById('formSubmissionFeedback');
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const status = document.getElementById("formSubmissionFeedback");
+            const data = new FormData(event.target);
+            // Make sure the form action URL is set correctly in the HTML
+            if (!form.action || form.action === '#') {
+                 status.innerHTML = '<div class="alert alert-danger" role="alert">Erreur: Action du formulaire non configurée.</div>';
+                 return;
+            }
+
+            // Basic validation check before fetch
+            if (!form.checkValidity()) {
+                 form.classList.add('was-validated');
+                 status.innerHTML = '<div class="alert alert-warning" role="alert">Veuillez remplir tous les champs requis.</div>';
+                 return;
+            }
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = '<div class="alert alert-success" role="alert">Merci pour votre message! Nous vous répondrons bientôt.</div>';
+                    form.reset();
+                    form.classList.remove('was-validated');
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            status.innerHTML = '<div class="alert alert-danger" role="alert">Oops! Il y a eu un problème lors de l\'envoi de votre message.</div>';
+                        }
+                    });
+                }
+            }).catch(error => {
+                status.innerHTML = '<div class="alert alert-danger" role="alert">Oops! Il y a eu un problème lors de l\'envoi de votre message.</div>';
+                console.error('Form submission error:', error);
+            });
+        }
+        // Only add listener if the form exists
+        if (form) {
+          form.addEventListener("submit", handleSubmit);
+        }
+
+    </script>
+
+</body>
+</html>

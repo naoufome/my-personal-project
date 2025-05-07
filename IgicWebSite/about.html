@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - École IGIC</title>
+
+    <!-- Google Fonts (Keep consistent with index.html) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Header: Logo et Navigation -->
+    <header>
+        <!-- Navbar structure remains the same, active class updated -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/igicLogo.png" alt="Logo École IGIC" width="120">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Basculer la navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a> <!-- No longer active -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">À Propos</a> <!-- **** ACTIVE CLASS MOVED HERE **** -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pôle Formations
+                            </a>
+                             <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#initialesModal">
+                                        Formations Initiales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#executivesModal">
+                                        Formations Executives
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Actualités IGIC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contactez-nous</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header Section - Enhanced Styling -->
+        <section class="page-header-custom text-white text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold">À Propos de l'École IGIC</h1>
+                <p class="lead mb-0">Découvrez notre histoire, notre mission et nos valeurs.</p>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="about-intro py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto text-center"> <!-- Centered text -->
+                        <h2 class="section-title mb-4">Présentation de l'École</h2>
+                        <p class="fs-5 mb-4 text-muted"> <!-- fs-5 and muted for sub-intro text -->
+                            Fondée avec la vision de former les leaders technologiques et managériaux de demain, l'École IGIC (anciennement CESA Sup depuis 1986) s'engage à fournir une éducation d'excellence. Nous combinons théorie rigoureuse et pratique intensive pour préparer nos étudiants aux défis complexes du monde professionnel moderne.
+                        </p>
+                        <p class="text-start">  Kept text-start for longer paragraphs */}
+                           Notre mission est de cultiver non seulement le savoir-faire technique, mais aussi le savoir-être essentiel : leadership, communication, éthique et adaptabilité. Nous sommes fiers de notre réseau de plus de 14 000 lauréats qui contribuent activement au développement économique national et international.
+                        </p>
+                         <p class="text-start">
+                            Ce qui nous rend unique, c'est notre approche pédagogique personnalisée, nos partenariats solides avec l'industrie (Microsoft, Cisco, etc.) et notre corps professoral composé d'experts passionnés et expérimentés. Rejoignez-nous pour construire un avenir prometteur.
+                        </p>
+                         <!-- Optional: Add a subtle divider -->
+                         <hr class="my-5 mx-auto" style="width: 50px; border-top: 3px solid var(--bs-primary);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mot du Directeur Section -->
+        <section class="director-message py-5 bg-light"> <!-- Added bg-light -->
+            <div class="container">
+                 <h2 class="section-title text-center mb-5">Mot du Président Directeur Général</h2>
+                <div class="row align-items-center">
+                    <!-- Colonne Texte (Gauche) -->
+                    <div class="col-lg-8">
+                         <blockquote class="director-quote fs-5 mb-4">
+                            <!-- Director's text -->
+                            <p>Votre projet de formation va engager votre avenir professionnel, mais aussi développer votre future carrière.</p>
+                            <p>Vous trouverez sur ce site toutes les informations utiles à une orientation intelligente pour construire et améliorer votre Profil.</p>
+                            <p>En visitant notre site vous constaterez que notre priorité est d’abord le développement et l’épanouissement de votre Personnalité. Car même si le savoir et le savoir-faire sont importants, le savoir-être est essentiel dans une vie. Notre mission est de vous accompagner pour rendre votre avenir gagnant.</p>
+                            <p>Excellente visite de notre site, et n’hésitez pas à venir nous rencontrer à Casablanca et à Mohammédia. Vous êtes les Bienvenus.</p>
+                            <p>Tous nos vœux de succès pour votre avenir.</p>
+                         </blockquote>
+                         <footer class="blockquote-footer mt-3 ms-5"> 
+                            <span class="fw-bold">Abdesslam BENAHRA</span><br>
+                            Président Directeur Général
+                         </footer>
+                    </div>
+                    <!-- Colonne Image (Droite) -->
+                    <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                         <img src="img/directeurImage.jpg" class="img-fluid director-image shadow" alt="Photo du Directeur Abdesslam Benahra">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mot de la Directrice Section -->
+        <section class="director-message py-5"> <!-- Removed bg-light for alternating pattern -->
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Mot de la Directrice Pédagogique</h2>
+                <div class="row align-items-center">
+                    <!-- Colonne Image (Gauche - order-lg-1) -->
+                    <div class="col-lg-4 text-center mb-4 mb-lg-0 order-lg-1">
+                         <img src="img/directrice_placeholder.jpg" class="img-fluid director-image shadow" alt="Photo de la Directrice Pédagogique">
+                    </div>
+                    <!-- Colonne Texte (Droite - order-lg-2) -->
+                    <div class="col-lg-8 order-lg-2">
+                         <blockquote class="director-quote fs-5 mb-4">
+                            <!-- Directrice's text placeholder -->
+                            <p>“Chez IGIC, nous plaçons l'étudiant au cœur de notre démarche pédagogique. Notre objectif est de vous fournir les outils, les connaissances et l'accompagnement nécessaires pour non seulement réussir vos études, mais aussi pour vous épanouir personnellement et professionnellement.”</p>
+                            <p>“Nous mettons l'accent sur l'innovation dans nos méthodes d'enseignement, l'interaction constante avec le monde professionnel et un suivi individualisé pour garantir la réussite de chacun.”</p>
+                            <p>“Nous sommes impatients de vous accueillir et de vous aider à réaliser vos ambitions.”</p>
+                         </blockquote>
+                         <footer class="blockquote-footer mt-3 ms-5">
+                            <span class="fw-bold">Nom de la Directrice</span> <br>
+                            Directrice Pédagogique
+                         </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Optional: Add other sections like Values, History, Campus Life using similar structure -->
+
+    </main>
+
+    <!-- Pied de page (Should inherit styles from style.css) -->
+    <footer class="footer-section bg-dark text-white py-5 mt-auto">
+        <!-- Using the enhanced footer structure from index.html for consistency -->
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Colonne 1: Logo & About -->
+                 <div class="col-lg-4 col-md-6">
+                    <img src="img/igicLogo_white.png" alt="Logo IGIC Blanc" width="150" class="mb-3">
+                    <p class="small text-muted">Formant les leaders de demain depuis 1986. Excellence, innovation et réussite professionnelle.</p>
+                     <p class="small text-muted mb-0">© 2024 École IGIC. Tous droits réservés.</p>
+                </div>
+                <!-- Colonne 2: Liens Utiles -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading mb-3">Navigation</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="#">Pôle Formations</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                 <!-- Colonne 3: Pôles -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading mb-3">Nos Pôles</h5>
+                    <ul class="list-unstyled footer-links">
+                       <li><a href="#" data-bs-toggle="modal" data-bs-target="#initialesModal">Formations Initiales</a></li>
+                       <li><a href="#" data-bs-toggle="modal" data-bs-target="#executivesModal">Formations Executives</a></li>
+                       <li><a href="dt-bac2.html">DT-BAC +2</a></li>
+                       <li><a href="dts-bac2.html">DTS-BAC +2</a></li>
+                       <li><a href="bachelor.html">Bachelor</a></li>
+                       <li><a href="masteres.html">Mastères</a></li>
+                    </ul>
+                </div>
+                <!-- Colonne 4: Contact & Social -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading mb-3">Contactez-nous</h5>
+                     <p class="small mb-1"><i class="bi bi-geo-alt-fill me-2"></i>123 Rue de l'École, Ville, Pays</p>
+                    <p class="small mb-1"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+1234567890" class="text-white text-decoration-none">+12 345 67890</a></p>
+                    <p class="small mb-3"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:info@igic.school" class="text-white text-decoration-none">info@igic.school</a></p>
+                    <h5 class="footer-heading mb-2">Suivez-nous</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2 fs-4"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white me-2 fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals (Should inherit styles from style.css) -->
+    <!-- MODAL FOR Formations Initiales -->
+    <div class="modal fade" id="initialesModal" tabindex="-1" aria-labelledby="initialesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="initialesModalLabel">Options - Formations Initiales</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Veuillez choisir une formation :</p>
+                    <div class="list-group">
+                        <a href="dt-bac2.html" class="list-group-item list-group-item-action">
+                            <i class="bi bi-mortarboard-fill me-2"></i> DT-BAC +2
+                        </a>
+                        <a href="dts-bac2.html" class="list-group-item list-group-item-action">
+                           <i class="bi bi-mortarboard-fill me-2"></i> DTS-BAC +2
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL Formations Initiales -->
+
+    <!-- MODAL FOR Formations Executives -->
+    <div class="modal fade" id="executivesModal" tabindex="-1" aria-labelledby="executivesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="executivesModalLabel">Options - Formations Executives</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                     <p>Veuillez choisir une formation :</p>
+                     <div class="list-group">
+                        <a href="bachelor.html" class="list-group-item list-group-item-action">
+                             <i class="bi bi-briefcase-fill me-2"></i> Bachelor
+                        </a>
+                        <a href="masteres.html" class="list-group-item list-group-item-action">
+                            <i class="bi bi-briefcase-fill me-2"></i> Mastères
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="bi bi-patch-check-fill me-2"></i> Formations certifiantes
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                             <i class="bi bi-gem me-2"></i> MBA Européen
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL Formations Executives -->
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Your Custom JS (if any) -->
+    <!-- <script src="js/script.js"></script> -->
+
+</body>
+</html>
